@@ -7,6 +7,7 @@ import Service from './services/serv';
 import TestimonialCarousel from './feedbacks/feedbacks';
 import Footer from '../_components/footer/footer';
 import MasterplanSection from './masterplan/sec';
+import Activity  from './activity/activity';
 
 const page = () => {
   return (
@@ -16,6 +17,8 @@ const page = () => {
      <AboutIntro/>
      <Service />
      <MasterplanSection  />
+     <Activity  />
+     <TestimonialCarousel  />
      <Footer />
     </div>
   );
