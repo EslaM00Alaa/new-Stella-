@@ -70,7 +70,7 @@ const Intro = () => {
    
 
     <span className="block mt-2 opacity-90">
-      قرية سياحية راقية
+      منتجع سياحي راقية 
     </span>
   </motion.h1>
 

@@ -3,9 +3,10 @@ import Header from '../_components/nav/nav';
 import Intro from './intro/intro';
 import AboutIntro from './aboutus/aboutus';
 import Service from './services/serv';
-import SectionsImages from './sectionImage/sec';
+
 import TestimonialCarousel from './feedbacks/feedbacks';
 import Footer from '../_components/footer/footer';
+import MasterplanSection from './masterplan/sec';
 
 const page = () => {
   return (
@@ -14,7 +15,7 @@ const page = () => {
      <Intro/>
      <AboutIntro/>
      <Service />
-     <TestimonialCarousel  />
+     <MasterplanSection  />
      <Footer />
     </div>
   );

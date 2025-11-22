@@ -13,15 +13,15 @@ const Service = () => {
       style={{ backgroundImage: `url(${img.src})` }}
     >
       {/* Dark Layer */}
-      <div className="absolute inset-0 
-     bg-gray-900/75
-    lg:bg-transparent
-    lg:bg-gradient-to-l
-    lg:from-gray-900/75
-    lg:via-gray-900/65
-    lg:to-gray-900/10
-      
-      "></div>
+      <div
+        className="absolute inset-0 
+        bg-gray-900/75
+        lg:bg-transparent
+        lg:bg-gradient-to-l
+        lg:from-gray-900/75
+        lg:via-gray-900/65
+        lg:to-gray-900/10"
+      ></div>
 
       <section
         id="services"
@@ -41,7 +41,7 @@ const Service = () => {
 
         {/* Content */}
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-14">
-
+          
           {/* Text */}
           <motion.div
             variants={fadeIn("left", 0.4)}
@@ -51,9 +51,9 @@ const Service = () => {
             className="w-full lg:w-6/12 space-y-6"
           >
             <p className="text-lg lg:text-2xl text-gray-200 text-center lg:text-right leading-relaxed">
-              نحن نمنحك تجربة استثنائية داخل القرية،  
-              حيث تجد كل ما تحتاجه للاستجمام، الراحة،  
-              والاستمتاع بأجواء بحرية فاخرة.
+              نوفر لك داخل نيو ستيلا سي فيو تجربة سياحية هادئة  
+              تجمع بين التصميم الذكي للمصاطب والرؤية البحرية  
+              والخدمات التي تضمن لك إقامة مريحة ومتكاملة.
             </p>
 
             {/* List Items */}
@@ -61,23 +61,28 @@ const Service = () => {
 
               <li className="flex items-start gap-3 justify-start">
                 <span className="w-3 h-3 mt-2 rounded-full bg-[#9d8244]"></span>
-                <span>وحدات سكنية بإطلالات بحرية مباشرة</span>
+                <span>وحدات تطل على البحر مباشرة بتصميم المصاطب المدرّجة</span>
               </li>
 
-              <li className="flex items-start gap-3 justify-center lg:justify-start">
+              <li className="flex items-start gap-3 justify-start">
                 <span className="w-3 h-3 mt-2 rounded-full bg-[#9d8244]"></span>
-                <span>خدمات ترفيهية ومرافق شاطئية عالمية المستوى</span>
+                <span>شاطئ بطول 930 متر يتميز بمياه صافية وطبيعة هادئة</span>
               </li>
 
-              <li className="flex items-start gap-3 justify-center lg:justify-start">
+              <li className="flex items-start gap-3 justify-start">
                 <span className="w-3 h-3 mt-2 rounded-full bg-[#9d8244]"></span>
-                <span>مساحات خضراء وممرات مصممة للاستجمام والاسترخاء</span>
+                <span>مناطق خضراء وممرات مخصصة للاسترخاء والتمشية</span>
+              </li>
+
+              <li className="flex items-start gap-3 justify-start">
+                <span className="w-3 h-3 mt-2 rounded-full bg-[#9d8244]"></span>
+                <span>هواء نقي ومنطقة رياح ثابتة توفر طقسًا معتدلًا طوال العام</span>
               </li>
 
             </ul>
           </motion.div>
 
-          {/* Image – Optional (Hidden Background) */}
+          {/* Hidden Image */}
           <motion.div
             variants={fadeIn("right", 0.4)}
             initial="hidden"
