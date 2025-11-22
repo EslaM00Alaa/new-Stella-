@@ -31,7 +31,7 @@ const MasterplanSection = () => {
           className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0d375c] mb-12 lg:mb-16 relative w-fit mx-auto lg:mx-0 text-center lg:text-right"
         >
           المخطط العام للقرية
-          <span className="absolute left-1/2 lg:left-0 -bottom-2 lg:-bottom-3 w-16 lg:w-20 h-1 bg-[#9d8244] rounded-full -translate-x-1/2 lg:translate-x-0"></span>
+          <span className="absolute left-1/2 lg:left-0 -bottom-2 lg:-bottom-3 w-24 lg:w-56 h-1 bg-[#9d8244] rounded-full -translate-x-1/2 lg:translate-x-0"></span>
         </motion.h2>
 
         {/* Main Grid */}
@@ -48,22 +48,22 @@ const MasterplanSection = () => {
             <h3 className="text-xl sm:text-2xl lg:text-2xl font-semibold text-[#0d375c] mb-2 lg:mb-4">تفاصيل المراحل</h3>
 
             {masterplanData.stages.map((stage, idx) => (
-              <div key={idx} className="bg-white p-3 sm:p-4 rounded-xl shadow hover:shadow-lg transition hover:scale-105">
+              <div key={idx} className="bg-white p-3 sm:p-4 rounded shadow hover:shadow-lg transition hover:scale-105">
                 <h4 className="font-bold text-[#9d8244] text-sm sm:text-base">{stage.name}</h4>
                 <p className="text-gray-700 text-xs sm:text-sm">عدد المصاطب: {stage.terraces}</p>
               </div>
             ))}
 
             {/* Stats */}
-            <div className="bg-white p-3 sm:p-4 rounded-xl shadow hover:shadow-lg transition hover:scale-105">
+            <div className="bg-white p-3 sm:p-4 rounded shadow hover:shadow-lg transition hover:scale-105">
               <h4 className="font-bold text-[#9d8244] text-sm sm:text-base">إجمالي المصاطب</h4>
               <p className="text-gray-700 text-xs sm:text-sm">{masterplanData.totalTerraces}</p>
             </div>
-            <div className="bg-white p-3 sm:p-4 rounded-xl shadow hover:shadow-lg transition hover:scale-105">
+            <div className="bg-white p-3 sm:p-4 rounded shadow hover:shadow-lg transition hover:scale-105">
               <h4 className="font-bold text-[#9d8244] text-sm sm:text-base">طول الشاطئ</h4>
               <p className="text-gray-700 text-xs sm:text-sm">{masterplanData.beachLength}</p>
             </div>
-            <div className="bg-white p-3 sm:p-4 rounded-xl shadow hover:shadow-lg transition hover:scale-105">
+            <div className="bg-white p-3 sm:p-4 rounded shadow hover:shadow-lg transition hover:scale-105">
               <h4 className="font-bold text-[#9d8244] text-sm sm:text-base">عمق المشروع</h4>
               <p className="text-gray-700 text-xs sm:text-sm">{masterplanData.depth}</p>
             </div>
@@ -72,7 +72,7 @@ const MasterplanSection = () => {
 
           {/* Left Div - Images */}
           <motion.div
-            variants={fadeIn("left", 0.3)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
