@@ -19,12 +19,7 @@ import bg4 from "../../../public/images/a10.jpeg";
 import bg5 from "../../../public/images/a11.jpg";
 
 const slides = [
-  {
-    image: bg1,
-    title: "New Stella Di Mare Sea View",
-    subtitle: "منتجع سياحي راقي",
-    desc: "شاليهات بإطلالة مباشرة على البحر وخدمات فندقية.",
-  },
+ 
   {
     image: bg2,
     title: "New Stella Di Mare Sea View",

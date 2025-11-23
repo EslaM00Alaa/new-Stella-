@@ -36,7 +36,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navClass = scrolled
+  const navClass = scrolled || menuOpen
     ? "bg-white text-black shadow-md"
     : "bg-transparent text-white";
 

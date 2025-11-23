@@ -78,7 +78,7 @@ export default function TestimonialCarousel() {
   if (!feedbackss.length) return null;
 
   return (
-    <div dir="ltr" className="py-32 bg-[#eee]">
+    <div dir="ltr" className="pt-32 pb-4 bg-[#eee]">
      
 
       <div className="relative w-full flex justify-between items-center gap-5">
