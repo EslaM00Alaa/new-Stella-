@@ -11,9 +11,9 @@ import ac4 from "../../../public/ac4.jpeg";
 
 const items = [
   { title: "حمامات السباحة", img: ac1 },
-  { title: "منطقة الأطفال", img: ac2 },
-  { title: "المطاعم والكافيهات", img: ac3 },
-  { title: "الشاطئ الخاص", img: ac4 },
+  { title: " الرياضة", img: ac2 },
+  { title: "المطاعم والكافيهات", img: ac4 },
+  { title: "الشاطئ الخاص", img: ac3 },
 ];
 
 const Activity = () => {
@@ -61,9 +61,7 @@ const Activity = () => {
                 className="w-full h-64  transition duration-500 group-hover:scale-110"
               />
 
-              {/* Dark Layer */}
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition duration-500"></div>
-
+             
               {/* Text */}
               <div className="absolute bottom-4 right-4 text-xl font-semibold">
                 {item.title}
