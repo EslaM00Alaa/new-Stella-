@@ -53,13 +53,13 @@ const Header = () => {
           
 
             {/* Right Links */}
-            <nav className="flex gap-10 text-xl ml-auto">
+            <nav className="flex gap-10 text-xl font-semibold ml-auto">
               {navLinks.map((link, index) => (
                 <Link
                   key={index}
                   href={link.href}
                   className={`${
-                    scrolled ? "text-[#c28d42]" : "text-[#9d8244]"
+                    scrolled ? "text-[#a77733]" : "text-[#9d8244]"
                   } hover:opacity-75 transition`}
                 >
                   {link.label}
