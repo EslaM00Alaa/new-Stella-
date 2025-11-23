@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import Image from "next/image";
 
-import ac1 from "../../../public/ac1.jpeg";
-import ac2 from "../../../public/ac2.jpeg";
-import ac3 from "../../../public/ac3.jpeg";
-import ac4 from "../../../public/ac4.jpeg";
+import ac1 from "../../../public/a1.jpeg";
+import ac2 from "../../../public/a6.jpeg";
+import ac6 from "../../../public/res.jpeg";
+import ac7 from "../../../public/sport.jpeg";
 
 const items = [
-  { title: "حمامات السباحة", img: ac1 },
-  { title: " الرياضة", img: ac2 },
-  { title: "المطاعم والكافيهات", img: ac4 },
-  { title: "الشاطئ الخاص", img: ac3 },
+  { title: "حمامات السباحة", img: ac2 },
+  { title: " الرياضة", img: ac7 },
+  { title: "المطاعم والكافيهات", img: ac6 },
+  { title: "الشاطئ الخاص", img: ac1 },
 ];
 
 const Activity = () => {
