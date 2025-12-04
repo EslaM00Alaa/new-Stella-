@@ -11,7 +11,7 @@ const LoginPage = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if (username === "admin" && password === "2003") {
+    if (username === "adminstella" && password === "admin@1234") {
       setError("");
 
       // Save info in localStorage
