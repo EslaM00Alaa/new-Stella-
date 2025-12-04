@@ -41,15 +41,15 @@ const Intro = () => {
       style={{ direction: "rtl" }}
     >
       {/* Background Video */}
-      <video
-        ref={videoRef}
-        src="/FINAL.mp4"
-        autoPlay
-        loop
-        muted={true} // unmuted only when in view
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+     <video
+      ref={videoRef}
+      src="https://res.cloudinary.com/dkwx24lyh/video/upload/v1764862178/WhatsApp_Video_2025-12-04_at_5.01.39_PM_1_jcnpkv.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover"
+    />
 
       {/* Dark Layer */}
       <div className="absolute inset-0 bg-black/50"></div>
