@@ -35,7 +35,7 @@ const Intro = () => {
 
   return (
     <div
-      id="intro"
+      id="#intro"
       ref={sectionRef}
       className="relative w-full h-screen overflow-hidden"
       style={{ direction: "rtl" }}

@@ -4,12 +4,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "api.elmohands-eeib.com",
-      },
-      {
-        protocol: "http",
-        hostname: "localhost",
-        port: "5665",
+        hostname: "raw.githubusercontent.com",
+        port: "",
+        pathname: "/EslaM00Alaa/new-Stella-/main/public/**",
       },
     ],
   },
