@@ -8,17 +8,18 @@ import { IoMdClose } from "react-icons/io";
 
 import iconlogo from "../../../public/cropped-logo_star-80x80.png";
 import textlogo from "../../../public/txtlogo.png";
+import textlogo1 from "../../../public/wlogo.png";
 
 const navLinks = [
-  { href: "/", label: "الرئيسية" },
-  { href: "/about", label: "اعرف عنا" },
-  { href: "/services", label: "الخدمات" },
-  { href: "/units", label: "الوحدات المتاحة" },
-  { href: "/contact", label: "تواصل معنا" },
+  { href: "/home/#intro", label: "الرئيسية" },
+  { href: "/home/#about", label: "اعرف عنا" },
+  { href: "/home/#services", label: "الخدمات" },
+  { href: "/home/#activities", label: " الأنشطة والخدمات" },
+  { href: "/home/#contact", label: "تواصل معنا" },
 ];
 
 
-const Header = () => {
+const Header = ({flag}) => {
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -59,7 +60,7 @@ const Header = () => {
                   key={index}
                   href={link.href}
                   className={`${
-                    scrolled ? "text-[#a77733]" : "text-[#9d8244]"
+                    scrolled ||flag ? "text-[#d5a055]" : "text-[#fff]"
                   } hover:opacity-75 transition`}
                 >
                   {link.label}
@@ -70,7 +71,7 @@ const Header = () => {
 
               {/* Left Logo (Icon + Text) */}
             <div className="flex items-center ">
-              <Image src={textlogo} alt="Text Logo   " width={240} />
+              <Image src={ scrolled || flag ? textlogo : textlogo1 } alt="Text Logo   " width={240} />
               <Image src={iconlogo} alt="Icon Logo" width={30} />
             </div>
           </div>
@@ -86,13 +87,13 @@ const Header = () => {
             {/* Menu Button */}
             <div
               onClick={() => setMenuOpen(!menuOpen)}
-              className="cursor-pointer text-[#9d8244]"
+              className="cursor-pointer text-[#d5a055]"
             >
               {menuOpen ? <IoMdClose size={30} /> : <AiOutlineMenu size={30} />}
             </div>
 
             <div className="flex items-center ">
-              <Image src={textlogo} alt="Text Logo" width={180} />
+              <Image src={ menuOpen ? textlogo : scrolled || flag ? textlogo : textlogo1 } alt="Text Logo" width={180} />
               <Image src={iconlogo} alt="Icon Logo" width={30} />
             </div>
 
@@ -102,13 +103,13 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobile && menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white text-black flex flex-col items-center gap-6 py-8 shadow-lg z-40">
+        <div className="absolute top-full left-0 w-full bg-white text-[#0d375c] flex flex-col items-center gap-6 py-8 shadow-lg z-40">
           {navLinks.map((link, index) => (
             <Link
               key={index}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-lg font-medium hover:text-[#9d8244] transition"
+              className="text-lg font-medium hover:text-[#0d375c] transition"
             >
               {link.label}
             </Link>

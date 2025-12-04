@@ -10,7 +10,7 @@ const contactDetails = [
   {
     icon: <FaLocationDot />,
     label: "العنوان",
-    value: "South Sinai, Egypt",
+    value: " السخنة – الزعفرانة في منطقة جنوب الدرج",
   },
   {
     icon: <MdEmail />,
@@ -20,7 +20,7 @@ const contactDetails = [
   {
     icon: <IoCall />,
     label: "ادارة المبيعات",
-    value: "19019",
+    value: "01222172370",
   },
 ];
 
@@ -38,7 +38,7 @@ const Contactus = () => {
           className="text-3xl lg:text-4xl font-semibold text-gray-800 w-fit relative mx-auto text-center"
         >
           تواصل معنا
-          <span className="absolute left-1/2 -bottom-3 w-28 h-1 bg-[#9d8244] rounded-full -translate-x-1/2"></span>
+          <span className="absolute left-1/2 -bottom-3 w-28 h-1 bg-[#d5a055] rounded-full -translate-x-1/2"></span>
         </motion.h2>
       </div>
 
@@ -56,7 +56,7 @@ const Contactus = () => {
             key={idx}
             className="flex items-center gap-4 bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/10"
           >
-            <span className="p-4 rounded-full bg-[#9d8244] text-gray-800 text-2xl">
+            <span className="p-4 rounded-full bg-[#d5a055] text-gray-100 text-2xl">
               {item.icon}
             </span>
 

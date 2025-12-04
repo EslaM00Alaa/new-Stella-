@@ -18,7 +18,7 @@ const items = [
 
 const Activity = () => {
   return (
-    <section className="bg-[#092741] py-20 px-4">
+    <section id="activities" className="bg-[#092741] py-20 px-4">
       <div className="w-11/12 lg:w-10/12 mx-auto text-right text-white">
 
         {/* Title */}
@@ -30,7 +30,7 @@ const Activity = () => {
           className="text-3xl lg:text-4xl font-bold mb-4 relative w-fit mx-auto lg:mx-0 text-center lg:text-right"
         >
           الأنشطة والخدمات
-          <span className="absolute left-1/2 lg:left-0 -bottom-3 w-24 h-1 bg-[#9d8244] rounded-full -translate-x-1/2 lg:translate-x-0"></span>
+          <span className="absolute left-1/2 lg:left-0 -bottom-3 w-24 h-1 bg-[#d5a055] rounded-full -translate-x-1/2 lg:translate-x-0"></span>
         </motion.h2>
 
         <motion.p

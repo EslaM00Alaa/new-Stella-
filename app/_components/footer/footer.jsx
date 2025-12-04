@@ -3,19 +3,22 @@ import { FaInstagram, FaWhatsapp, FaFacebookF } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => {
-  const socialLinks = [
-    { href: "#", icon: FaWhatsapp },
-    { href: "#", icon: FaFacebookF },
-    { href: "#", icon: FaInstagram },
-  ];
+  
+const socialLinks = [
+  { href: "https://wa.me/201222172370", icon: FaWhatsapp }, 
+  { href: "https://web.facebook.com/profile.php?id=61584120384021&_rdc=1&_rdr#", icon: FaFacebookF },
+  { href: "https://www.instagram.com/newstellaseaview/?igsh=MTA4dmxieGY1Y2twbQ%3D%3D#", icon: FaInstagram },
+];
 
-  const navLinks = [
-    { href: "/", label: "الرئيسية" },
-    { href: "/about", label: "اعرف عنا" },
-    { href: "/services", label: "الخدمات" },
-    { href: "/units", label: "الوحدات المتاحة" },
-    { href: "/contact", label: "تواصل معنا" },
-  ];
+
+const navLinks = [
+  { href: "/home/#intro", label: "الرئيسية" },
+  { href: "/home/#about", label: "اعرف عنا" },
+  { href: "/home/#services", label: "الخدمات" },
+  { href: "/home/#activities", label: " الأنشطة والخدمات" },
+  { href: "/home/#contact", label: "تواصل معنا" },
+];
+
 
   return (
     <footer className="bg-[#071827] text-white pt-12 pb-6 w-full">
@@ -28,7 +31,7 @@ const Footer = () => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 lg:p-3 text-xl lg:text-2xl bg-[#9d8244] rounded-full 
+            className="p-2 lg:p-3 text-xl lg:text-2xl bg-[#d5a055] rounded-full 
             flex items-center justify-center 
             hover:scale-110 transition-transform duration-200 ease-out"
           >
@@ -43,7 +46,7 @@ const Footer = () => {
           <Link
             key={i}
             href={href}
-            className="hover:text-[#9d8244] transition"
+            className="hover:text-[#d5a055] transition"
           >
             {label}
           </Link>

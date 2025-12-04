@@ -10,11 +10,13 @@ import Activity  from './activity/activity';
 import SectionImage from './sec/section';
 import Contactus from './contactus/contactus';
 import Support from '../_components/support/support';
+import Achivments from './achievements/achievements';
+import Section2Image from './section/sec';
 
 const page = () => {
   return (
-    <div className='w-full relative '>
-     <Header/>
+    <div className='w-full  '>
+     <Header flag={false}/>
      <Support/>
      <Intro/>
      
@@ -22,6 +24,13 @@ const page = () => {
      <Service />
      <MasterplanSection  />
      <Activity  />
+     
+     <Achivments />
+     <Section2Image />
+
+
+
+
      <TestimonialCarousel  />
      <SectionImage  />
 

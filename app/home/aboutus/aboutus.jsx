@@ -19,8 +19,8 @@ const stats = [
 
 const AboutIntro = () => {
   return (
-    <div className="bg-[#eee] py-12">
-      <section id="aboutus" className="w-11/12 lg:w-10/12 mx-auto my-20">
+    <div className="bg-[#eee] py-5">
+      <section id="about" className="w-11/12 lg:w-10/12 mx-auto my-20">
         
         {/* Title */}
         <motion.h2
@@ -31,7 +31,7 @@ const AboutIntro = () => {
           className="text-3xl lg:text-4xl font-semibold text-[#0d375c] mb-16 w-fit relative mx-auto lg:mx-0 text-center lg:text-right"
         >
           من نحن
-          <span className="absolute left-1/2 lg:left-0 -bottom-4 w-16 h-1 bg-[#9d8244] rounded-full -translate-x-1/2 lg:translate-x-0"></span>
+          <span className="absolute left-1/2 lg:left-0 -bottom-4 w-16 h-1 bg-[#d5a055] rounded-full -translate-x-1/2 lg:translate-x-0"></span>
         </motion.h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -86,7 +86,7 @@ const AboutIntro = () => {
               viewport={{ once: true }}
               className="flex flex-col items-center"
             >
-              <h4 className="text-2xl font-bold text-[#9d8244]">{stat.number}</h4>
+              <h4 className="text-2xl font-bold text-[#d5a055]">{stat.number}</h4>
               <p className="text-gray-700 mt-2 text-base lg:text-lg">{stat.label}</p>
             </motion.div>
           ))}

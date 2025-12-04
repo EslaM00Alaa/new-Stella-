@@ -1,174 +1,122 @@
-// "use client";
+"use client";
 
-// import { motion } from "framer-motion";
-// import { fadeIn } from "../variants";
-// import React from "react";
-// import Header from "../_components/nav/nav";
-// import Footer from "../_components/footer/footer";
-// import Image from "next/image";
-// import modrenHouse from "../../public/images/mdn.jpg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
+import React from "react";
+import Header from "../_components/nav/nav";
+import Footer from "../_components/footer/footer";
+import Image from "next/image";
+import img from "../../public/images/a9.jpeg";
 
-// const Page = () => {
-//   return (
-//     <div className="bg-white text-gray-800">
-//       <Header />
+const Page = () => {
+  return (
+    <div className="bg-white text-gray-900">
+      <Header flag={true}/>
 
-//       {/* Hero Section */}
-//       <div className="relative w-full h-[60vh]">
-//         <Image
-//           src={modrenHouse}
-//           alt="modren house"
-//           layout="fill"
-//           objectFit="cover"
-//           className="brightness-75"
-//         />
-//         <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
-//           <h1 className="text-white text-4xl md:text-6xl font-bold text-center">
-//             شركة المهندس للتطوير العقاري
-//           </h1>
-//         </div>
-//       </div>
+      {/* HERO (Image Left - Text Right) */}
+      <section className="w-11/12 max-w-7xl mx-auto py-32 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
-//       {/* About Company */}
-//       <div className="w-11/12 max-w-6xl mx-auto py-16 space-y-10">
-//         <motion.div
-//           variants={fadeIn("up", 0.2)}
-//           initial="hidden"
-//           whileInView="show"
-//           viewport={{ once: true }}
-//           className="text-lg leading-8"
-//         >
-//           <h2 className="text-2xl md:text-3xl font-semibold text-[#e0a14b] mb-4">
-//             من نحن
-//           </h2>
-//           <p>
-//             شركة <strong>المهندس للتطوير العقاري</strong> هي شركة مصرية متخصصة
-//             في تقديم خدمات التطوير العقاري المتكاملة، مقرها الرئيسي في محافظة
-//             المنيا. تأسست عام 2010، ومنذ ذلك الحين تسعى لتمكين عملائها من
-//             الحصول على منزل أحلامهم، مكتبهم أو متجرهم، سواء للأغراض الشخصية أو
-//             الاستثمارية، في مختلف أنحاء مصر.
-//           </p>
-//           <p className="mt-4">
-//             نحن نقدم خدمات متكاملة تشمل الإشراف المعماري، التشطيبات طبقاً للكود
-//             المصري، إعداد المخططات الهندسية، تصميم اللاندسكيب، حمامات السباحة،
-//             المصاعد المنزلية، أنظمة التكييف المركزي، وأعمال الديكور الداخلي
-//             والخارجي.
-//           </p>
-//         </motion.div>
+    
+        <motion.div
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView="show"
+          className="space-y-6 text-right"
+        >
+          <h1 className="text-3xl md:text-5xl font-bold leading-[1.4] text-gray-900">
+            قرية نيو ستيلا سي فيو – جنوب الدرج
+            <span className="block mt-3 text-[#d5a055] text-2xl md:text-3xl font-semibold">
+              البحر… الطبيعة… تصميم يعيش للأبد
+            </span>
+          </h1>
 
-//         {/* Services Section */}
-//         <motion.div
-//           variants={fadeIn("up", 0.3)}
-//           initial="hidden"
-//           whileInView="show"
-//           viewport={{ once: true }}
-//         >
-//           <h2 className="text-2xl md:text-3xl font-semibold text-[#e0a14b] mb-4">
-//             خدماتنا
-//           </h2>
-//           <ul className="list-disc pl-5 space-y-2 text-base">
-//             <li>التطوير العقاري للشقق، الفلل، المحال التجارية</li>
-//             <li>الإشراف المعماري والتنفيذ وفق الكود المصري</li>
-//             <li>أعمال التشطيبات والديكورات الداخلية والخارجية</li>
-//             <li>تصميم وتنفيذ حمامات السباحة، المصاعد، التكييف المركزي</li>
-//             <li>مشاريع سكنية وتجارية داخل المنيا الجديدة والقديمة والعاصمة الإدارية</li>
-//           </ul>
-//         </motion.div>
+          <p className="text-gray-600 text-lg leading-8">
+            تجربة فريدة على ساحل البحر الأحمر حيث تجتمع المياه الصافية،
+            التصميم الذكي، والطبيعة الساحرة في مكان واحد يقدم لك الهدوء
+            والجمال والرؤية المباشرة للبحر في كل اتجاه.
+          </p>
+        </motion.div>
 
-//         {/* Achievements Section */}
-//         <motion.div
-//           variants={fadeIn("up", 0.4)}
-//           initial="hidden"
-//           whileInView="show"
-//           viewport={{ once: true }}
-//         >
-//           <h2 className="text-2xl md:text-3xl font-semibold text-[#e0a14b] mb-4">
-//             سابقة الأعمال
-//           </h2>
-//           <p>
-//             تمتلك شركة المهندس سجلًا مشرفًا من الإنجازات، حيث نفذت وسلّمت أكثر
-//             من <strong>30 مشروعًا</strong> بنجاح منذ انطلاقها في السوق المصري،
-//             مع التزام صارم بمواعيد التسليم وجودة التنفيذ، مما جعل شعارها
-//             الموثوق:
-//           </p>
-//           <p className="italic font-semibold text-[#e0a14b] mt-2">
-//             "كلمتنا التزام."
-//           </p>
-//         </motion.div>
+          <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          className="w-full h-[350px] md:h-[480px] relative rounded overflow-hidden shadow-lg"
+        >
+          <Image
+            src={img}
+            alt="Stella Sea View"
+            fill
+            className=" scale-110 hover:scale-125 transition-all duration-700"
+          />
+         
+        </motion.div>
+      </section>
 
-//         {/* Vision */}
-//         <motion.div
-//           variants={fadeIn("up", 0.5)}
-//           initial="hidden"
-//           whileInView="show"
-//           viewport={{ once: true }}
-//         >
-//           <h2 className="text-2xl md:text-3xl font-semibold text-[#e0a14b] mb-4">
-//             رؤيتنا
-//           </h2>
-//           <p>
-//             نسعى إلى توفير حلول استثمارية وسكنية عالية الجودة للمستثمرين،
-//             الشركات، والأنشطة التجارية الطامحة للتوسع في محافظة المنيا، العاصمة
-//             الإدارية، التجمع الخامس، وغيرها.
-//           </p>
-//         </motion.div>
+      {/* PAGE CONTENT */}
+      <div className="w-11/12 max-w-6xl mx-auto py-20 space-y-20">
+        {/* ABOUT */}
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          className="leading-8 text-lg"
+        >
+          <h2 className="text-3xl font-bold text-[#d5a055] mb-6">من نحن</h2>
 
-//         {/* Locations */}
-//         <motion.div
-//           variants={fadeIn("up", 0.6)}
-//           initial="hidden"
-//           whileInView="show"
-//           viewport={{ once: true }}
-//         >
-//           <h2 className="text-2xl md:text-3xl font-semibold text-[#e0a14b] mb-4">
-//             مواقع المشاريع
-//           </h2>
-//           <ul className="list-disc pl-5 space-y-2 text-base">
-//             <li>المنيا </li>
-//             <li>المنيا الجديدة</li>
-//             <li>التجمع الخامس</li>
-//             <li>شمال الرحاب</li>
-//             <li>العاصمة الإدارية الجديدة</li>
-//           </ul>
-//         </motion.div>
+          <p>
+            تمتد قرية <strong>نيو ستيلا سي فيو – جنوب الدرج</strong> على مساحة
+            ضخمة تبلغ 471,000 م² في واحدة من أجمل مناطق البحر الأحمر، حيث
+            تتناغم المياه الفيروزية مع الطبيعة الصخرية الفريدة.
+          </p>
 
-//         {/* Branches */}
-//         <motion.div
-//           variants={fadeIn("up", 0.7)}
-//           initial="hidden"
-//           whileInView="show"
-//           viewport={{ once: true }}
-//         >
-//           <h2 className="text-2xl md:text-3xl font-semibold text-[#e0a14b] mb-4">
-//             فروعنا واستثماراتنا
-//           </h2>
-//           <p>
-//             نمتلك فرعين خارجيين في <strong>سلطنة عُمان</strong> و{" "}
-//             <strong>المملكة الأردنية</strong>، مما يدعم استثماراتنا الخارجية
-//             ويعكس ثقة العملاء الإقليمية.
-//           </p>
-//         </motion.div>
+          <p className="mt-4">
+            يعتمد تصميم القرية على نظام المصاطب المتدرجة، ما يضمن رؤية بحرية
+            كاملة لكل وحدة. بدأ المشروع في 2002 ونُفّذ على أربع مراحل حتى 2010،
+            ليضم أكثر من <strong>2123 وحدة</strong> بمساحات متنوعة تطل جميعها
+            على البحر.
+          </p>
+        </motion.div>
 
-//         {/* Chairman */}
-//         <motion.div
-//           variants={fadeIn("up", 0.8)}
-//           initial="hidden"
-//           whileInView="show"
-//           viewport={{ once: true }}
-//         >
-//           <h2 className="text-2xl md:text-3xl font-semibold text-[#e0a14b] mb-4">
-//             رئيس مجلس الإدارة
-//           </h2>
-//           <p>
-//             يقود الشركة السيد <strong>محمد حسن</strong> بخبرة ورؤية استراتيجية
-//             واضحة للنمو والتوسع وتحقيق رضا العملاء عبر مشاريع نوعية ناجحة.
-//           </p>
-//         </motion.div>
-//       </div>
+        {/* SERVICES */}
+        <motion.div variants={fadeIn("up", 0.3)} initial="hidden" whileInView="show">
+          <h2 className="text-3xl font-bold text-[#d5a055] mb-6">خدماتنا</h2>
+          <ul className="list-disc pl-6 space-y-3 text-gray-700">
+            <li>تنفيذ المشروع بنظام المصاطب لرؤية بانورامية للبحر.</li>
+            <li>تصميم هندسي ومعماري متكامل.</li>
+            <li>تخطيط يواكب أفضل معايير الرياح والتهوية.</li>
+            <li>صيانة مستمرة للمرافق العامة.</li>
+          </ul>
+        </motion.div>
 
-//       <Footer />
-//     </div>
-//   );
-// };
+        {/* PROJECT STATS */}
+        <motion.div variants={fadeIn("up", 0.4)} initial="hidden" whileInView="show">
+          <h2 className="text-3xl font-bold text-[#d5a055] mb-6">ملخص المشروع</h2>
 
-// export default Page;
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 text-lg">
+            <p>📍 <strong>الموقع:</strong> طريق السويس – السخنة – الزعفرانة</p>
+            <p>🌊 <strong>طول الشاطئ:</strong> 930 متر</p>
+            <p>🏝 <strong>عمق المشروع:</strong> 506 متر داخل اليابسة</p>
+            <p>🏗 <strong>الإنشاء:</strong> 2002 – 2010</p>
+            <p>🏢 <strong>عدد الوحدات:</strong> 2123 وحدة</p>
+            <p>🏞 <strong>المصاطب:</strong> 19 مصطبة</p>
+          </div>
+        </motion.div>
+
+        {/* END MESSAGE */}
+        <motion.div variants={fadeIn("up", 0.7)} initial="hidden" whileInView="show">
+          <h2 className="text-3xl font-bold text-[#d5a055] mb-6">كلمة ختامية</h2>
+
+          <p className="text-gray-700 text-lg leading-8">
+            تجمع القرية بين التصميم الذكي وجمال الطبيعة، لتمنحك تجربة ساحرة
+            على شاطئ البحر الأحمر… حيث اللحظات الجميلة لا تُنسى.
+          </p>
+        </motion.div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Page;
