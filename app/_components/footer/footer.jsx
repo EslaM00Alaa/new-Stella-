@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   
 const socialLinks = [
-  { href: "https://wa.me/201222172370", icon: FaWhatsapp }, 
+  { href: "https://wa.me/201117730992", icon: FaWhatsapp }, 
   { href: "https://web.facebook.com/profile.php?id=61584120384021&_rdc=1&_rdr#", icon: FaFacebookF },
   { href: "https://www.instagram.com/newstellaseaview/?igsh=MTA4dmxieGY1Y2twbQ%3D%3D#", icon: FaInstagram },
 ];
