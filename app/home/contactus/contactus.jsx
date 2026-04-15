@@ -20,7 +20,7 @@ const contactDetails = [
   {
     icon: <IoCall />,
     label: "ادارة المبيعات",
-    value: "01222172370   |  01117730992",
+    value: " 01117730992",
   },
  
 ];
